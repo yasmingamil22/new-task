@@ -1,0 +1,83 @@
+
+<section class="contact ">
+    <div class="container">
+    
+        <h2 class="main-title py-4">Contact Us</h2>
+    
+        <div class="row g-4 align-items-center justify-content-center">
+            <div class="col-lg-6 d-flex flex-column align-items-center">
+    
+                <form [formGroup]="contactForm" (ngSubmit)="send()">
+                   <input formControlName="name"  type="text" id="name" placeholder="Name" class="form-control">
+                  
+                   <div *ngIf="contactForm.get('name')?.errors &&contactForm.get('name')?.touched " class="text-danger d-flex align-items-center small m-0 p-0 p-2">
+           
+                    <img src="./assets/img/invalid.png" width="22" height="22" alt="">
+                    <p *ngIf="contactForm.get('name')?.getError('required')" class="m-0 mx-1 ">name is required</p>
+            
+                </div>
+                  
+                  
+                   <input formControlName="email" type="email" id="email" placeholder="Email" class="form-control">
+                  
+                   <div *ngIf="contactForm.get('email')?.errors &&contactForm.get('email')?.touched " class="text-danger d-flex align-items-center small m-0 p-0 p-2">
+                    <img src="./assets/img/invalid.png" width="22" height="22" alt="">
+                    <p *ngIf="contactForm.get('email')?.getError('required')" class="m-0 mx-1">email is required</p>
+                    <p *ngIf="contactForm.get('email')?.getError('email')"  class="m-0 mx-1">email is invalid</p>
+            
+                </div>
+                  
+                  
+                  
+                   <input formControlName="phone" type="tel" id="phone" placeholder="Phone" class="form-control">
+    
+                   <div *ngIf="contactForm.get('phone')?.errors &&contactForm.get('phone')?.touched " class="text-danger d-flex align-items-center small m-0 p-0 p-2">
+                    <img src="./assets/img/invalid.png" width="22" height="22" alt="">
+                    <p *ngIf="contactForm.get('phone')?.getError('required')" class="m-0 mx-1">phone is required</p>
+                    <p *ngIf="contactForm.get('phone')?.getError('pattern')"  class="m-0 mx-1">accept only egypt phone numbers</p>
+            
+                </div>
+    
+    
+                   <button>Send</button>
+
+                   <div *ngIf="mesOk" class="alert alert-success small m-0 p-0 w-75 my-3 m-auto text-center">
+                    <p  class="m-0 ">{{mesOk}}</p>
+                </div>
+    
+                   <div *ngIf="mesError" class="alert alert-danger small m-0 p-0 w-75 my-3 m-auto text-center">
+                    <p  class="m-0 ">{{mesError}}</p>
+                </div>
+
+
+    
+                </form>
+             
+    
+    
+            </div>
+            <div class="col-lg-6  d-flex flex-column align-items-center">
+                <div>
+                    <div>
+                        <i class="fa-solid fa-envelope text-secondary-color px-3"></i>
+                        <span>upskilling.eg1@gmail.com</span>
+                    </div>
+        
+                   <div>
+                    <i class="fa-solid fa-phone text-secondary-color px-3"></i>
+                    <span>+20 115 493 2137</span>
+                   </div>  
+    
+                </div>
+                
+                
+            </div>
+        </div>
+    
+    
+    
+    </div>
+    
+    </section>
+    
+    

@@ -1,0 +1,78 @@
+.home{
+    background-image: url('/assets/img/main photo.jpeg');
+    background-position: center center;
+    background-size: 100% 100%;
+    min-height: 100vh; 
+
+    h1{
+        font-size: 3.75rem;
+        font-weight: 300;
+        line-height: 71.1px;
+        text-align: left;
+        
+        }
+        
+    p{
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 25.5px;
+            text-align: center;
+            width: 500px;
+            
+            }
+}
+
+.title {
+    span{
+        font-size: 21px;
+        font-weight: 800;
+        line-height: 24.88px;
+        letter-spacing: 0.755em;
+        
+        }
+}
+
+.main {
+    h2{
+        font-size: 96px;
+        font-weight: 250;
+        line-height: 89.5px;
+        text-align: center;
+        
+        .long{
+            font-size: 6rem;
+            font-weight: 900;
+            line-height: 89.5px;
+            text-align: center;
+            }
+
+        }
+}
+
+
+@media (max-width: 992px) { 
+    h1{
+   font-size: 2rem;
+    }
+
+    h2{
+        font-size: 3rem;
+
+       
+    }
+
+    .long{
+        font-size: 3.7rem !important;
+
+    }
+
+    .title {
+        span{
+          
+            letter-spacing: 0.5em;
+            
+            }
+    }
+   
+
+}

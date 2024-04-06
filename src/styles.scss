@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$main-color:#6D91EE;
+$main-light-color:#CEDCFF;
+$bg-light:#F5F5F5;
+$secondary-color: #5180F6;
+$gray-color:#4F4F4F;
+$yellow-color:#EEC04B;
+$dark-blue-color:#324473;
+$dark-color:#22366A;
+
+body{
+    font-family: "Poppins", sans-serif !important;
+}
+.text-main-color{
+color: $main-color;
+}
+.text-gray-color{
+    color: $gray-color;
+}
+.text-dark-blue-color{
+    color: $dark-blue-color;
+}
+.text-dark-color{
+    color: $dark-color;
+}
+.text-secondary-color{
+    color: $secondary-color;
+}
+
+
+
+
+.bg-main-light-color{
+    background-color: $main-light-color;
+}
+.bg-yellow-color{
+    background-color: $yellow-color;
+}
+
+.bg-light{
+    background-color: $bg-light;
+}
+.btn-main-color{
+    background-color: $main-color;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+    border: none;
+}
+.btn-secondary-color{
+    background-color: $secondary-color;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 25px;
+    border: none;
+}
+.btn-yellow-color{
+    background-color: $yellow-color;
+    color: black;
+    padding: 15px 50px;
+    border-radius: 25px;
+    border: none;
+}
+
+.main-title{
+    color: $main-color;
+font-size: 4rem;
+font-weight: 900;
+line-height: 89.5px;
+text-align: center;
+
+}
+
+h2{
+
+font-size: 4rem !important;
+font-weight: 900 !important;
+line-height: 89.5px !important;
+
+}
+p{
+font-size: 18px !important;
+font-weight: 700 !important;
+line-height: 24px !important;
+
+}
+
+@media (max-width: 992px) { 
+
+    
+
+    h2{
+        font-size: 2.5rem !important;
+
+    }
+
+    .main-title{
+
+        font-size: 2.5rem !important;
+
+    }
+
+}

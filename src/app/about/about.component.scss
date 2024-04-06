@@ -1,0 +1,21 @@
+
+.about {
+    background-image: url('/assets/img/bg1.png');
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh;
+
+    .item{
+        min-height: 100vh;
+
+        background-image: url('/assets/img/bg2.svg');
+        background-position: right; 
+        background-repeat: no-repeat;
+
+    }
+
+    
+}
+
+
+
